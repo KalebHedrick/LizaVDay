@@ -8,9 +8,6 @@ import images from './images';
 import './App.css';
 import { use } from 'react';
 
-const imageFiles = import.meta.glob('/src/assets/*.jpg', { eager: true });
-const images2 = Object.values(imageFiles).map((img) => img.default);
-
 function App() {
   const [count, setCount] = useState(0);
   const [audioEnabled, setAudioEnabled] = useState(false);
@@ -49,15 +46,15 @@ function App() {
       </button>
 
       {/* Audio Element */}
-      <audio ref={audioRef} src="/src/assets/song.mp3" loop preload="auto"/>
+      <audio ref={audioRef} src="/assets/song.mp3" loop preload="auto"/>
         
       {/* Image Section */}
       <div className="image-container">
-        <img src={"/src/assets/gsdrg.gif"} className="hat photo floating" alt="Displayed Image" />
-        <img src={"/src/assets/gsdrg.gif"} className="hat photo floating" alt="Displayed Image" />
-        <img src={"/src/assets/" + images[count]} className="hat photo floating" alt="Displayed Image" />
-        <img src={"/src/assets/gsdrg.gif"} className="hat photo floating" alt="Displayed Image" />
-        <img src={"/src/assets/gsdrg.gif"} className="hat photo floating" alt="Displayed Image" />
+        <img src={"/assets/gsdrg.gif"} className="hat photo floating" alt="Displayed Image" />
+        <img src={"/assets/gsdrg.gif"} className="hat photo floating" alt="Displayed Image" />
+        <img src={"/assets/" + images[count]} className="hat photo floating" alt="Displayed Image" />
+        <img src={"/assets/gsdrg.gif"} className="hat photo floating" alt="Displayed Image" />
+        <img src={"/assets/gsdrg.gif"} className="hat photo floating" alt="Displayed Image" />
       </div>
 
       {/* Text Section */}
