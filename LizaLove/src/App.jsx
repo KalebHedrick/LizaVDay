@@ -48,11 +48,7 @@ function App() {
         
       {/* Image Section */}
       <div className="image-container">
-        <img src={"/assets/gsdrg.gif"} className="hat photo floating" alt="Displayed Image" />
-        <img src={"/assets/gsdrg.gif"} className="hat photo floating" alt="Displayed Image" />
         <img src={"/assets/" + images[count]} className="hat photo floating" alt="Displayed Image" />
-        <img src={"/assets/gsdrg.gif"} className="hat photo floating" alt="Displayed Image" />
-        <img src={"/assets/gsdrg.gif"} className="hat photo floating" alt="Displayed Image" />
       </div>
 
       {/* Text Section */}
