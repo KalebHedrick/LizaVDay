@@ -52,7 +52,7 @@ function App() {
       </div>
 
       {/* Text Section */}
-      <div className="card">
+      <div className="card" style={{ fontSize: count === 42 ? '0.5em' : '1em' }}>
         <h1>{reasons[count]}</h1>
       </div>
 

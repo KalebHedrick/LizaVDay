@@ -35,7 +35,7 @@
 }
 
 .card {
-  font-size: clamp(.5em, 1em, 5em);
+  font-size: 1em;
   min-height: 20vh;
   max-height: 20vh;
   flex: 1;
