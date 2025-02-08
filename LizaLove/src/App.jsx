@@ -1,12 +1,10 @@
 import { useState, useRef, useEffect } from 'react';
-import viteLogo from '/vite.svg';
 import reasons from './reasons';
 import KeyboardTabIcon from '@mui/icons-material/KeyboardTab';
 import VolumeUpSharpIcon from '@mui/icons-material/VolumeUpSharp';
 import VolumeMuteSharpIcon from '@mui/icons-material/VolumeMuteSharp';
 import images from './images';
 import './App.css';
-import { use } from 'react';
 
 function App() {
   const [count, setCount] = useState(0);
