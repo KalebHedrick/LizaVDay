@@ -35,7 +35,7 @@
 }
 
 .card {
-  font-size: 1em;
+  font-size: 3vw;
   min-height: 20vh;
   max-height: 20vh;
   flex: 1;
@@ -164,11 +164,5 @@
 
   to {
     transform: translateY(-20px);
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  card {
-    font-size: 0.5em;
   }
 }
