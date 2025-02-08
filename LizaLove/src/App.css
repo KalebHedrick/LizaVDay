@@ -1,0 +1,168 @@
+#root {
+  
+  margin: 0 auto;
+  text-align: center;
+}
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%
+}
+.photo {
+  height: 28em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.photo.hat:hover {
+  filter: drop-shadow(0 0 7em #ff008caa);
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  flex: 1;
+}
+.image-container {
+  min-height: 50%;
+  max-height: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  font-size: 1em;
+  min-height: 20vh;
+  max-height: 20vh;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.nextButton {
+  align-items: center;
+  background-color: #fee6e3;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.nextButton:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.nextButton:hover:after {
+  transform: translate(0, 0);
+}
+
+.nextButton:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.nextButton:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .nextButton {
+    padding: 0 40px;
+  }
+}
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.audioButton {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #ffdeda;
+  border: 2px solid black;
+  transition: background 0.3s ease;
+  z-index: 100;
+}
+
+.audioButton:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.floating {
+  animation: floatUpDown 3s ease-in-out infinite;
+}
+
+@keyframes floatUpDown {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animated-heart {
+  animation: float 2s infinite ease-in-out alternate;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-20px);
+  }
+}
