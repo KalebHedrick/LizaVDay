@@ -166,3 +166,9 @@
     transform: translateY(-20px);
   }
 }
+
+@media only screen and (max-width: 768px) {
+  card {
+    font-size: 0.5em;
+  }
+}
